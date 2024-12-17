@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      img,
+      image {
+        border-radius: 30px;
+      }
+      div,
+      button {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        align-items: center;
+        padding: 15px;
+        margin: 4px;
+        border-radius: 4px;
+        height: 40px;
+        box-shadow: black 2px;
+      }
+      button {
+        background-color: orange;
+      }
+      marquee {
+        direction: ltr;
+        background-color: orange;
+      }
+      body {
+        background-color: aquamarine;
+        font-family: "Times New Roman", Times, serif;
+      }
+      head {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      table,
+      tab {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+      .cent {
+        text-align: center;
+      }
+      a:hover {
+        color: rgb(228, 241, 220);
+      }
+      button.feature:hover {
+        background-color: red;
+      }
+      a {
+        text-decoration: none;
+      }
+      pre {
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      }
+      button:hover{
+        background-color: rgb(107, 204, 204);
+      }
+    </style>
+  </head>
+  <body>
+    <marquee>
+      <p>hello wellcome to my website</p>
+      <p id="date">hello</p>
+    </marquee>
+    <button>go on middle of page</button>
+    <a href="#last"> <button class="feature">Go to last page</button></a>
+
+    <center>
+      <img id="image" src="manish.jpg" height="500" width="450" />
+    </center>
+    <p class="cent">Click here to change the picture</p>
+    <div>
+      <button
+        type="button"
+        onclick="document.getElementById('image').src= 'manish.jpg' "
+      >
+        manish
+      </button>
+      <button
+        type="button"
+        onclick="document.getElementById('image').src= 'anish.jpg '"
+      >
+        anish
+      </button>
+      <button
+        type="button"
+        onclick="document.getElementById('image').src='jivan.jpg  '"
+      >
+        jivan
+      </button>
+      <button
+        type="button"
+        onclick="document.getElementById('image').src= 'anita.jpg' "
+      >
+        anita
+      </button>
+
+      <p id="sum"></p>
+    </div>
+    <table id="tab" border="1px">
+      <tr>
+        <th colspan="2">
+          <abbr title="this man is very sociogenic and think about other's well"
+            >MANISH</abbr
+          >
+        </th>
+        <th>anish</th>
+        <th>nish</th>
+        <th>ish</th>
+        <th>sh</th>
+      </tr>
+      <tr>
+        <td rowspan="3">manish</td>
+        <td>manish</td>
+        <td>manish</td>
+        <td>manish</td>
+        <td>manish</td>
+      </tr>
+      <tr>
+        <td>manish</td>
+        <td>manish</td>
+        <td>manish</td>
+        <td colspan="2">manish</td>
+        <td>manish</td>
+      </tr>
+      <tr>
+        <td>manish</td>
+        <td>manish</td>
+        <td>manish</td>
+        <td>manish</td>
+        <td>manish</td>
+      </tr>
+    </table>
+
+    <pre>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus
+      pariatur <mark> text here is marked using mark tag </mark> praesentium 
+      itaque fugit qui odio,magnam officia quos tempore
+      reprehenderit? Illum repudiandae, fugit quisquam molestiae aut numquam
+      voluptatem distinctio corrupti.</pre>
+
+    <script>
+      document.getElementById("date").innerHTML = Date();
+      let Lastname, Firstname;
+      Firstname = "manish ";
+      Lastname = "ghimire";
+
+      document.getElementById("sum").innerHTML = Firstname + Lastname;
+    </script>
+    <p id="last"></p>
+  </body>
+</html>
